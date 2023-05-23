@@ -1,0 +1,20 @@
+:host {
+  display: flex;
+  flex-direction: column;
+  max-height: 97vh;
+  max-width: 270px;
+  width: 300px;
+  padding: 10px 10px 10px 10px;
+  background-color: var(--grey);
+  color: white;
+  border-radius: 10px;
+  margin: 10px 10px 10px 10px;
+}
+/* overflow-y: hidden; */
+
+.player-card {
+  height: 100%;
+  background-color: rgb(255 248 248 / 10%);
+  border-radius: 10px;
+  margin-top: 8px;
+}

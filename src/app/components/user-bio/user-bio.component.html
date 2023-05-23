@@ -1,0 +1,7 @@
+<div class="flex row user_bio">
+    <img [src]="user.imgUrl">
+    <span>{{user.name}}</span>
+    <div class="icon">
+        <fa-icon [icon]="signOutIcon" (click)="logout()"></fa-icon>
+    </div>
+</div>

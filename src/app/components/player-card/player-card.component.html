@@ -1,0 +1,11 @@
+<div class="card">
+    <div class="image" [style.background-image]="'url(' + playingSong.album.imgUrl + ')'"></div>
+    <div class="controllers">
+        <span>{{playingSong.title}}</span>
+        <div class="btns">
+            <fa-icon (click)="prevSong()" class="btn backward" [icon]="backward"></fa-icon>
+            <fa-icon class="btn play" [icon]="play"></fa-icon>
+            <fa-icon (click)="nextSong()" class="btn forward" [icon]="forward"></fa-icon>
+        </div>
+    </div>
+</div>

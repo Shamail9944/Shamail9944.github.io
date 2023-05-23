@@ -1,0 +1,54 @@
+.card {
+  /* background-color: grey; */
+  height: 100%;
+  width: 100%;
+  margin-top: 3px;
+  border-radius: 5px;
+  max-width: 215px;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+span {
+  font-size: 0.85rem;
+}
+.image {
+  width: 95%;
+  height: 75%;
+  background-position: top;
+  background-size: cover;
+  background-repeat: no-repeat;
+  opacity: 0.7;
+  border-radius: 10px;
+}
+
+.controllers {
+  padding: 3px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.btns {
+  display: flex;
+  align-items: center;
+  flex-direction: row;
+  margin-top: 5px;
+  gap: 30px;
+}
+.backward {
+  cursor: pointer;
+  color: var(--green);
+}
+.forward {
+  cursor: pointer;
+  color: var(--green);
+}
+.play {
+  /* background-color: var(--green); */
+  cursor: pointer;
+  color: white;
+  font-size: 20px;
+}

@@ -1,0 +1,15 @@
+img {
+  width: 15%;
+  height: auto;
+  margin-top: -3px;
+  border-radius: 25px;
+}
+.artist-title {
+  margin-left: 10px;
+  align-self: center;
+  font-size: 0.85rem;
+  cursor: pointer;
+}
+.container {
+  /* cursor: pointer; */
+}

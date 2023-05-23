@@ -1,0 +1,62 @@
+:host {
+  max-width: 220px;
+  max-height: 97vh;
+  overflow-y: hidden;
+  display: flex;
+  flex-direction: column;
+  background-color: var(--grey);
+  margin: 10px 10px 10px 10px;
+  border-radius: 10px;
+}
+.menus {
+  flex: 1;
+  flex-direction: column;
+  height: 100%;
+  padding: 0px 10px 0px 10px;
+  margin-top: 5px;
+}
+.image-container {
+  min-height: 30px;
+}
+img {
+  width: 50%;
+}
+.menu-container {
+  width: 100%;
+  margin-top: 10px;
+  /* display: flex;
+  flex-direction: column; */
+}
+.options {
+  min-height: 100px;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+}
+.playlist-title {
+  margin: 10px 0px;
+  align-self: flex-start;
+  font-weight: bold;
+}
+.playlist-scroll {
+  width: 100%;
+  margin-bottom: 10px;
+  /* max-height: 60vh; */
+  overflow-y: auto;
+  margin-top: 15px;
+  /* webkit scrollbar display none */
+  /* background-color: blue; */
+}
+.m1 {
+  margin-right: 20px;
+}
+.user-info {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-grow: 0;
+  /* align-self: center; */
+  height: 50px;
+  width: 100%;
+  /* background-color: red; */
+}

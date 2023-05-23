@@ -1,0 +1,37 @@
+<div class="music-chart">
+    <span class="title-chart">
+        Top Artist
+    </span>
+    <app-top-artist class="top-artist"></app-top-artist>
+
+    <span class="assorted-music">
+        Playlist
+    </span>
+
+    <table class="table mt-3">
+        <thead>
+            <tr>
+                <th class="play-col"></th>
+                <th class="title-col">Title</th>
+                <th class="artist-col">Artist</th>
+                <th>Duration</th>
+                <th class="album-col">Album</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr *ngFor="let song of songs" (click)="playSong(song)" [class.played]="song.id === currentSong.id">
+                <td>
+                    <fa-icon class="play" [icon]="playIcon"></fa-icon>
+                </td>
+                <td>{{song.title}}</td>
+                <td>{{obtainArtist(song)}}</td>
+                <td>{{song.tempo}}</td>
+                <td>{{song.album.name}}</td>
+            </tr>
+        </tbody>
+    </table>
+
+
+</div>
+
+<app-right-panel class="right-panel"></app-right-panel>

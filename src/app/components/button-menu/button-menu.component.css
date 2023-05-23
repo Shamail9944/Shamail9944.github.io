@@ -1,0 +1,27 @@
+:host {
+  display: block;
+  width: 100%;
+  margin-bottom: 10px;
+}
+
+button {
+  background-color: transparent;
+  color: var(--text-inactive);
+  border: none;
+  font-weight: bold;
+  font-size: 0.75rem;
+}
+span {
+  text-align: left;
+  display: inline-block;
+  vertical-align: middle;
+  width: 150px;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.selected {
+  color: var(--text-active);
+  background-color: transparent;
+}

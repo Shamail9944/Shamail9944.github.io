@@ -1,0 +1,74 @@
+:host {
+  display: flex;
+  justify-content: space-between;
+}
+.right-panel {
+  height: 97vh;
+}
+.list {
+  padding: 0px 50px;
+  width: 100%;
+  padding-bottom: 20px;
+  min-height: 100%;
+  overflow-y: scroll;
+}
+
+.table {
+  width: 100%;
+  color: white;
+  text-align: left;
+  table-layout: fixed;
+  border-collapse: collapse;
+}
+
+.play {
+  padding-left: 5px;
+  font-size: 0.5rem;
+  color: var(--green);
+}
+
+thead th {
+  font-size: 0.75rem;
+  font-weight: 600;
+  color: var(--green);
+  /* color: grey; */
+}
+
+tbody tr {
+  font-size: 0.75rem;
+  height: 30px;
+}
+
+th,
+td {
+  padding-right: 20px;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+tr:hover {
+  cursor: pointer;
+  color: var(--green);
+}
+.play-col {
+  width: 6%;
+}
+.title-col {
+  width: 30%;
+}
+.artist-col {
+  width: 30%;
+}
+.album-col {
+  width: 20%;
+}
+
+.played {
+  background-color: var(--grey);
+  padding: 10px;
+  box-shadow: 0px 0px 15px grey;
+}
+.played td {
+  color: var(--green);
+}

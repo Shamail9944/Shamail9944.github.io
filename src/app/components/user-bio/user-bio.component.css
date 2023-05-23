@@ -1,0 +1,32 @@
+.row {
+  padding: 5px 10px;
+  justify-content: space-between;
+  align-items: center;
+  height: 100%;
+  width: 100%;
+  flex-direction: row;
+  align-items: center;
+  align-content: start;
+}
+
+img {
+  flex-grow: 0;
+  width: 40px;
+  height: auto;
+  border-radius: 50%;
+  margin-right: 5px;
+}
+
+span {
+  font-size: 0.75rem;
+  flex-grow: 1;
+  margin-left: 5px;
+  margin-right: 5px;
+  font-weight: bold;
+}
+
+.icon {
+  flex-grow: 1;
+  margin-left: 5px;
+  cursor: pointer;
+}

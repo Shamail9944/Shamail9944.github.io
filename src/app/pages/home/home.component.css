@@ -1,0 +1,97 @@
+:host {
+  color: white;
+  display: flex;
+  justify-content: space-between;
+}
+.music-chart {
+  padding: 0px 25px;
+  padding-bottom: 20px;
+  width: 100%;
+  max-height: 97vh;
+  overflow-y: scroll;
+  margin-top: 10px;
+  margin-bottom: 10px;
+  display: flex;
+  flex-direction: column;
+  background-color: var(--grey);
+  border-radius: 10px;
+}
+span {
+  font-size: 1.5rem;
+  font-weight: 700;
+}
+
+.title-chart {
+  display: block;
+  font-weight: 700;
+}
+
+.top-artist {
+  display: block;
+  margin-top: 2px;
+}
+
+.assorted-music {
+  /* margin-top: 10px; */
+  margin-bottom: 10px;
+}
+
+.table {
+  width: 100%;
+  color: white;
+  text-align: left;
+  table-layout: fixed;
+  border-collapse: collapse;
+}
+
+.play {
+  padding-left: 5px;
+  font-size: 0.5rem;
+  color: var(--green);
+}
+
+thead th {
+  font-size: 0.75rem;
+  font-weight: 600;
+  color: var(--green);
+  /* color: grey; */
+}
+
+tbody tr {
+  font-size: 0.75rem;
+  height: 30px;
+}
+
+th,
+td {
+  padding-right: 20px;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+tr:hover {
+  cursor: pointer;
+  color: var(--green);
+}
+.play-col {
+  width: 6%;
+}
+.title-col {
+  width: 30%;
+}
+.artist-col {
+  width: 30%;
+}
+.album-col {
+  width: 20%;
+}
+
+.played {
+  background-color: var(--grey);
+  padding: 10px;
+  box-shadow: 0px 0px 15px grey;
+}
+.played td {
+  color: var(--green);
+}

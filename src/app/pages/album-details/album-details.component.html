@@ -1,0 +1,34 @@
+<div class="album">
+    <app-banner [imgUrl]="bannerImgUri" [text]="bannerText"></app-banner>
+
+    <!-- <div class="title-bg">
+        {{title}}
+    </div> -->
+
+    <table class="table mt-3">
+        <thead>
+            <tr>
+                <th class="play-col"></th>
+                <th class="title-col">Title</th>
+                <th class="artist-col">Artist</th>
+                <th>Duration</th>
+                <th class="album-col">Album</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr *ngFor="let song of songs" (click)="playSong(song)" [class.played]="song.id === playingSong.id">
+                <td>
+                    <fa-icon class="play" [icon]="playIcon"></fa-icon>
+                </td>
+                <td>{{song.title}}</td>
+                <td>{{obtainArtist(song)}}</td>
+                <td>{{song.tempo}}</td>
+                <td>{{song.album.name}}</td>
+            </tr>
+        </tbody>
+    </table>
+
+
+</div>
+
+<app-right-panel class="right-panel"></app-right-panel>
