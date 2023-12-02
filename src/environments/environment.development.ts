@@ -4,6 +4,7 @@ export const SpotifyAuthorization = {
     clientId: '3108e5d2317244bbaf4a4d6dfc3670b8',
     clientSecret: '13109872cecc47de83502ab6f2ae905e',
     redirectUrl: 'http://localhost:4200/login/',
+    // redirectUrl: '/login/',
     scopes: [
         "user-read-currently-playing",
         "user-read-recently-played",
@@ -15,7 +16,3 @@ export const SpotifyAuthorization = {
         "playlist-read-collaborative",
     ]
 }
-// export const SpotifyToken = {
-//     authEndpoint: 'https://accounts.spotify.com/api/token',
-//     grant_type: 'client_credentials',
-// } 
