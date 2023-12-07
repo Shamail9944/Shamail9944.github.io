@@ -21,13 +21,39 @@ export class SpotifyService {
   }
 
   spotifyAuthLogin() {
-    const authEndpoint = `${SpotifyAuthorization.authEndpoint}?`;
-    const clientId = `client_id=${SpotifyAuthorization.clientId}&`;
-    const redirectUrl = `redirect_uri=${SpotifyAuthorization.redirectUrl}&`;
-    const scopes = `scope=${SpotifyAuthorization.scopes.join('%20')}&`;
+    const authEndpoint = `https://accounts.spotify.com/authorize?`;
+    const clientId = `client_id=3108e5d2317244bbaf4a4d6dfc3670b8&`;
+    const redirectUrl = `redirect_uri=http://localhost:4200/login/&`;
+    const scopes = `scope=user-read-currently-playing&user-read-recently-played&user-read-playback-state&user-top-read&user-modify-playback-state&user-library-read&playlist-read-private&playlist-read-collaborative&`;
     const responseType = `response_type=token&show_dialog=true`;
     return authEndpoint + clientId + redirectUrl + scopes + responseType
   }
+  //   spotifyAuthLogin() {
+  //     const authEndpoint = `${SpotifyAuthorization.authEndpoint}?`;
+  //     const clientId = `client_id=${SpotifyAuthorization.clientId}&`;
+  //     const redirectUrl = `redirect_uri=${SpotifyAuthorization.redirectUrl}&`;
+  //     const scopes = `scope=${SpotifyAuthorization.scopes.join('%20')}&`;
+  //     const responseType = `response_type=token&show_dialog=true`;
+  //     return authEndpoint + clientId + redirectUrl + scopes + responseType
+  //   }
+  //   export const SpotifyAuthorization = {
+  //     authEndpoint: 'https://accounts.spotify.com/authorize',
+  //     clientId: '3108e5d2317244bbaf4a4d6dfc3670b8',
+  //     clientSecret: '13109872cecc47de83502ab6f2ae905e',
+  //     redirectUrl: 'http://localhost:4200/login/',
+  //     // redirectUrl: '/login/',
+  //     scopes: [
+  //         "user-read-currently-playing",
+  //         "user-read-recently-played",
+  //         "user-read-playback-state",
+  //         "user-top-read",
+  //         "user-modify-playback-state",
+  //         "user-library-read",
+  //         "playlist-read-private",
+  //         "playlist-read-collaborative",
+  //     ]
+  // }
+
 
   getCallbackCode() {
     console.log(window.location.hash);
