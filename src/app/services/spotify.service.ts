@@ -23,7 +23,7 @@ export class SpotifyService {
   spotifyAuthLogin() {
     const authEndpoint = `https://accounts.spotify.com/authorize?`;
     const clientId = `client_id=3108e5d2317244bbaf4a4d6dfc3670b8&`;
-    const redirectUrl = `redirect_uri=https://spotify-angular-sdk.vercel.app/login&`;
+    const redirectUrl = `redirect_uri=https://spotify-angular-sdk.vercel.app/login/&`;
     const scopes = `scope=user-read-currently-playing&user-read-recently-played&user-read-playback-state&user-top-read&user-modify-playback-state&user-library-read&playlist-read-private&playlist-read-collaborative&`;
     const responseType = `response_type=token&show_dialog=true`;
     return authEndpoint + clientId + redirectUrl + scopes + responseType
